@@ -1,14 +1,10 @@
-let result;
-for (let i=1;i<=4;i++){
-let numberQ=+prompt('Введите ваше число №: '+i);
+
+function getMaxNumber(a,b,c,d){
+	let result=Math.max(a,b,c,d);
+	if (typeof a=="number" && typeof b=="number" && typeof c=="number" && typeof d=="number"){
+return result;
+}else {
+	return 0;
 }
-function gds(numberQ){
-	if (numberQ==Number)
-result=+Math.max(numberQ);
-alert(result);
 }
-else
-{
-	alert('Это не число');
-}
-gds(result);
+console.log(getMaxNumber(5,4,4.6,1));
